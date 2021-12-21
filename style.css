@@ -1,0 +1,139 @@
+@media screen and (max-width:750px)
+{
+*{padding:0;margin: 0;}
+
+.body{background-color:grey;}
+
+.container{width:100%;margin: 0 auto;}
+
+
+.header{background-image:url("電梯3.jpg");width: 100%;position: relative;}
+.header img {border-radius: 50%;;width:25%;}
+.header h3{color:red;font-weight:bold;font-size:150%;position:absolute;left: 28%;top:30%;}
+.header h4{color:red;font-weight:bold;font-size: 70%; position:absolute;left:28%;top:60%;}
+
+.box{padding-top: 10px;background-image: url(齒輪背景.jpg);overflow: hidden;}
+.nav{width: 20%;overflow:hidden;background-color: white;float:left}
+.nav li{list-style:none;float:left;font-size: 90%;margin: 5%;}
+.nav li a{
+    display: block;
+    width: 110%;
+    background-image:linear-gradient(red,black) ;
+    font-weight:bold;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+.nav li a:hover{
+    color:yellow;
+}
+
+.content{background-color:white;float:right;width: 80%;}
+.content h1{width: 95%;margin:1%;padding:2%;font-size:130%;color:black;background-image:linear-gradient(to right,yellow,black);border-radius: 20px;float:left;}
+.content h2{width: 95%;margin:1%;padding:2%;font-size:100%;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;float:left}
+.content h3{margin: 1%;font-size: 100%;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
+.content h4{margin: 2%;font-size: 100%;line-height: 150%;color: rgb(17, 17, 124);}
+.content h5{margin: 1%;font-size: 80%;line-height: 100%;text-align: center;}
+.content p{margin: 2%;font-size: 100%;line-height: 150%;}
+.content ol{margin: 10%;font-size: 100%;line-height: 150%;}
+.square1{float:left;padding:1%;margin: 5%;background-color: white;width: 38%;}
+.square1:hover{transform:scale(1.1)}
+.square1 img{width: 100px;height: 200px;}
+.square2{float:left;padding:1%;margin: 5%;background-color:white;width: 45%;}
+.square2:hover{transform:scale(1.1)}
+.square2 img{width: 150px;height: 150px;}
+.square3{float:left;padding:1%;margin: 5%;background-color: white;width: 45%;}
+.square3:hover{transform:scale(1.1)}
+.square3 img{width: 210px;height: 150px;}
+.square4{float:left;padding:1%;margin: 5%;background-color: white;width: 45%;}
+.square4:hover{transform:scale(1.1)}
+.square4 img{width: 150px;height: 150px;}
+.square5{float:left;padding:1%;margin: 5%;background-color: white;width: 38%;}
+.square5:hover{transform:scale(1.1)}
+.square5 img{width: 150px;height: 150px;}
+.square6{float:left;padding:1%;margin: 5%;background-color: white;width: 55%;}
+.square6:hover{transform:scale(1.1)}
+.square6 img{width: 130px;height: 180px;}
+
+.button{float: left;margin-left: 5%;}
+.button:hover{transform:scale(1.01);}
+.button0{float: left;margin-left: 80%;}
+.button0:hover{transform:scale(1.1);}
+
+
+.map iframe{position:relative;width:100%; height:100%;}
+
+.footer{color:white;background-color: black;text-align: center;padding: 5%;}
+.footer p{margin:1%;font-size: 80%;line-height: 100%;}
+}
+
+
+@media screen and (min-width:750px)
+{
+
+*{padding:0;margin: 0;}
+
+.body{background-color:grey;}
+
+.container{width:1000px;margin: 0 auto;}
+
+.header{background-image: url(電梯3.jpg);width: 1000px;height: 120px;position: relative;}
+.header img {border-radius: 50%;height: 120px;}
+.header h3{color:red;font-weight:bold;font-size: 40px; position:absolute;left:12%;top:20%;}
+.header h4{color:red;font-weight:bold;font-size: 20px; position:absolute;left:12%;top:65%;}
+
+.box{padding-top: 10px;background-image: url(齒輪背景.jpg);overflow: hidden;}
+.nav{width: 150px;overflow:hidden;position: relative;background-color: white;float:left}
+.nav li{list-style:none;float:left;font-size: 20px;margin: 8px;}
+.nav li a{
+    display: block;
+    width: 140px;height: 50px;
+    background-image:linear-gradient(red,black) ;
+    font-weight:bold;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+.nav li a:hover{
+    color:yellow;
+}
+
+.content{background-color:white;float:right;width: 850px;}
+.content h1{width: 800px;margin:20px;padding:10px;font-size:20px;color:black;background-image:linear-gradient(to right,yellow,black);border-radius: 20px;float:left;}
+.content h2{width: 800px;margin:20px;padding:10px;font-size:15px;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;float:left}
+.content h3{margin: 15px;font-size: 20px;line-height: 10px;color: rgb(17, 17, 124);text-align: center;}
+.content h4{margin: 25px;font-size: 20px;line-height: 30px;color: rgb(17, 17, 124);}
+.content h5{margin:15px;font-size: 15px;line-height: 10px;line-height: 20px;text-align: center;}
+.content p{margin: 25px;font-size: 15px;line-height: 30px;}
+.content ol{margin: 40px;font-size: 15px;line-height: 30px;}
+.square1{float:left;padding:5px;margin: 10px;background-color: white;width: 170px;}
+.square1:hover{transform:scale(1.1)}
+.square1 img{width: 100px;height: 200px;}
+.square2{float:left;padding:5px;margin: 10px;background-color: white;width: 210px;}
+.square2:hover{transform:scale(1.1)}
+.square2 img{width: 150px;height: 150px;}
+.square3{float:left;padding:5px;margin: 10px;background-color: white;width: 210px;}
+.square3:hover{transform:scale(1.1)}
+.square3 img{width: 210px;height: 150px;}
+.square4{float:left;padding:5px;margin: 10px;background-color: white;width: 210px;}
+.square4:hover{transform:scale(1.1)}
+.square4 img{width: 150px;height: 150px;}
+.square5{float:left;padding:5px;margin: 10px;background-color: white;width: 210px;}
+.square5:hover{transform:scale(1.1)}
+.square5 img{width: 150px;height: 150px;}
+.square6{float:left;padding:5px;margin: 10px;background-color: white;width: 250px;}
+.square6:hover{transform:scale(1.1)}
+.square6 img{width: 150px;height: 200px;}
+
+.button{float: left;margin-left: 10%;}
+.button:hover{transform:scale(1.01);}
+.button0{float: left;margin-left: 80%;}
+.button0:hover{transform:scale(1.1);}
+
+.map iframe{position:relative;width:700px;height: 450px;}
+
+.footer{color:white;background-color: black;text-align: center;padding: 20px;}
+.footer p{margin:15px;font-size: 15px;line-height: 10px;}
+}
