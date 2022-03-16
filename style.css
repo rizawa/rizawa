@@ -34,6 +34,8 @@
 .content h2{width: 95%;margin:1%;padding:2%;font-size:100%;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;float:left}
 .content h3{margin: 1%;font-size: 100%;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
 .content h4{margin: 2%;font-size: 100%;line-height: 150%;color: rgb(17, 17, 124);}
+.content a{color: rgb(17, 17, 124)}
+.content a:hover{color:blue;}
 .content h5{margin: 1%;font-size: 80%;line-height: 100%;text-align: center;}
 .content p{margin: 2%;font-size: 100%;line-height: 150%;}
 .content ol{margin: 10%;font-size: 100%;line-height: 150%;}
@@ -66,6 +68,8 @@
 
 .footer{color:white;background-color: black;text-align: center;padding: 5%;}
 .footer p{margin:1%;font-size: 80%;line-height: 100%;}
+.footer a{color:white}
+.footer a:hover{color:yellow;}
 }
 
 
@@ -105,6 +109,8 @@
 .content h2{width: 800px;margin:20px;padding:10px;font-size:15px;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;float:left}
 .content h3{margin: 15px;font-size: 20px;line-height: 10px;color: rgb(17, 17, 124);text-align: center;}
 .content h4{margin: 25px;font-size: 20px;line-height: 30px;color: rgb(17, 17, 124);}
+.content a{color: rgb(17, 17, 124)}
+.content a:hover{color:blue;}
 .content h5{margin:15px;font-size: 15px;line-height: 10px;line-height: 20px;text-align: center;}
 .content p{margin: 25px;font-size: 15px;line-height: 30px;}
 .content ol{margin: 40px;font-size: 15px;line-height: 30px;}
@@ -136,4 +142,6 @@
 
 .footer{color:white;background-color: black;text-align: center;padding: 20px;}
 .footer p{margin:15px;font-size: 15px;line-height: 10px;}
+.footer a{color:white}
+.footer a:hover{color:yellow;}
 }
