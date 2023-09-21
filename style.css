@@ -12,7 +12,7 @@
 .header h3{color:red;font-weight:bold;font-size:150%;position:absolute;left: 28%;top:30%;}
 .header h4{color:red;font-weight:bold;font-size: 70%; position:absolute;left:28%;top:60%;}
 
-.box{padding-top: 10px;background-image: url(齒輪背景.jpg);overflow: hidden;}
+.box{padding-top: 10px;background-image: url(背景.png);overflow: hidden;}
 .nav{width: 20%;overflow:hidden;background-color: white;float:left}
 .nav li{list-style:none;float:left;font-size: 90%;margin: 5%;}
 .nav li a{
@@ -39,6 +39,10 @@
 .content h5{margin: 1%;font-size: 80%;line-height: 100%;text-align: center;}
 .content p{margin: 2%;font-size: 100%;line-height: 150%;}
 .content ol{margin: 10%;font-size: 100%;line-height: 150%;}
+.content table{margin-left:5%;border: black 6px solid;background-image:repeating-linear-gradient(50deg,pink,hotpink,rgb(250, 57, 153),rgb(195, 17, 201));padding:1% }
+.content td{font-size:110%;font-weight: bold;border: black 2px solid;background-color: antiquewhite;padding:2%;}
+.content td:hover{transform:scale(1.05);}
+
 .square1{float:left;padding:1%;margin: 5%;background-color: white;width: 38%;}
 .square1:hover{transform:scale(1.1)}
 .square1 img{width: 100px;height: 200px;}
@@ -58,8 +62,6 @@
 .square6:hover{transform:scale(1.1)}
 .square6 img{width: 130px;height: 180px;}
 
-.button{float: left;margin-left: 5%;}
-.button:hover{transform:scale(1.01);}
 .button0{float: left;margin-left: 80%;}
 .button0:hover{transform:scale(1.1);}
 
@@ -87,7 +89,7 @@
 .header h3{color:red;font-weight:bold;font-size: 40px; position:absolute;left:12%;top:20%;}
 .header h4{color:red;font-weight:bold;font-size: 20px; position:absolute;left:12%;top:65%;}
 
-.box{padding-top: 10px;background-image: url(齒輪背景.jpg);overflow: hidden;}
+.box{padding-top: 10px;background-image: url(背景.png);overflow: hidden;}
 .nav{width: 150px;overflow:hidden;position: relative;background-color: white;float:left}
 .nav li{list-style:none;float:left;font-size: 20px;margin: 8px;}
 .nav li a{
@@ -114,6 +116,10 @@
 .content h5{margin:15px;font-size: 15px;line-height: 10px;line-height: 20px;text-align: center;}
 .content p{margin: 25px;font-size: 15px;line-height: 30px;}
 .content ol{margin: 40px;font-size: 15px;line-height: 30px;}
+.content table{margin-left:5%;border: black 6px solid;background-image:repeating-linear-gradient(50deg,pink,hotpink,rgb(250, 57, 153),rgb(195, 17, 201));padding:1% }
+.content td{font-size:110%;font-weight: bold;border: black 2px solid;background-color: antiquewhite;padding:2%;}
+.content td:hover{transform:scale(1.05);}
+
 .square1{float:left;padding:5px;margin: 10px;background-color: white;width: 170px;}
 .square1:hover{transform:scale(1.1)}
 .square1 img{width: 100px;height: 200px;}
@@ -133,8 +139,7 @@
 .square6:hover{transform:scale(1.1)}
 .square6 img{width: 150px;height: 200px;}
 
-.button{float: left;margin-left: 10%;}
-.button:hover{transform:scale(1.01);}
+
 .button0{float: left;margin-left: 80%;}
 .button0:hover{transform:scale(1.1);}
 
