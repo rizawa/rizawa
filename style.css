@@ -108,6 +108,7 @@
 }
 
 .content{background-color:white;float:right;width: 850px;}
+.content img{width: 100%;}
 .content h1{width: 800px;margin:20px;padding:10px;font-size:20px;color:black;background-image:linear-gradient(to right,yellow,black);border-radius: 20px;float:left;}
 .content h2{width: 800px;margin:20px;padding:10px;font-size:15px;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;float:left}
 .content h3{margin: 15px;font-size: 20px;line-height: 10px;color: rgb(17, 17, 124);text-align: center;}
