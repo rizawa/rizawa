@@ -30,6 +30,7 @@
 }
 
 .content{background-color:white;float:right;width: 80%;}
+.content img{width: 100%;}
 .content h1{width: 95%;margin:1%;padding:2%;font-size:130%;color:black;background-image:linear-gradient(to right,yellow,black);border-radius: 20px;float:left;}
 .content h2{width: 95%;margin:1%;padding:2%;font-size:100%;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;float:left}
 .content h3{margin: 1%;font-size: 100%;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
