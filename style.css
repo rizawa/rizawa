@@ -41,7 +41,7 @@
 .content h5{margin: 1%;font-size: 80%;line-height: 100%;text-align: center;}
 .content p{margin: 2%;font-size: 100%;line-height: 150%;}
 .content ol{margin: 10%;font-size: 100%;line-height: 150%;}
-.content table{margin-left:5%;border: black 6px solid;background-image:repeating-linear-gradient(50deg,pink,hotpink,rgb(250, 57, 153),rgb(195, 17, 201));padding:1% }
+.content table{margin-left:5%;border: black 6px solid;background-image:repeating-linear-gradient(50deg,white,gold,brown,black);padding:1% }
 .content td{font-size:110%;font-weight: bold;border: black 2px solid;background-color: antiquewhite;padding:2%;}
 .content td:hover{transform:scale(1.05);}
 
@@ -120,7 +120,7 @@
 .content h5{margin:15px;font-size: 15px;line-height: 10px;line-height: 20px;text-align: center;}
 .content p{margin: 25px;font-size: 15px;line-height: 30px;}
 .content ol{margin: 40px;font-size: 15px;line-height: 30px;}
-.content table{margin-left:5%;border: black 6px solid;background-image:repeating-linear-gradient(50deg,pink,hotpink,rgb(250, 57, 153),rgb(195, 17, 201));padding:1% }
+.content table{margin-left:5%;border: black 6px solid;background-image:repeating-linear-gradient(50deg,white,gold,brown,black);padding:1% }
 .content td{font-size:110%;font-weight: bold;border: black 2px solid;background-color: antiquewhite;padding:2%;}
 .content td:hover{transform:scale(1.05);}
 
