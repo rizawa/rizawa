@@ -5,15 +5,16 @@
 {
 
     body{background-image: url(背景1_無版權_httpswww.pexels.comzh-tw.jpg);background-repeat: repeat;}
-    .container{width: 80%;margin: 0 auto;background-color:  white;  justify-content: center;}
+    .container{width: 100%;margin: 0 auto;background-color:  white;  justify-content: center;}
 
-    .header1{background-color:red;width: 80%;height: 1vw;position: fixed;top:0;margin: 0 auto;}
-    .header2{background-color:white;width:  80%;height:8vw;position: fixed;top:1vw;margin: 0 auto;}
-
-    .header2 h3{color:black;font-weight:bold;position:absolute;left:11%;top:0%;width: 58%;font-size: 4vw;}
-    .header2 h4{color:black;font-weight:bold;position:absolute;left:11%;top:65%;width: 58%;font-size: 2vw;}
-    .nav{width: 78%;overflow:hidden;background-color:  wheat;padding: 1% ;position: fixed;top:9vw;}
-    .nav li{list-style:none;float:right;font-size: 2.5vw;margin-right: 2%;}
+    .header1{background-color:red;width: 100%;height: 1vw;position: fixed;top:0;margin: 0 auto;}
+    .header2{background-color:white;width:  100%;height:15vw;position: fixed;top:1vw;margin: 0 auto;}
+    
+    .header2 img{border-radius: 0%;width:15%;}
+    .header2 h3{color:black;font-weight:bold;position:absolute;left:16%;top:8%;width: 65%;font-size: 6.3vw;}
+    .header2 h4{color:black;font-weight:bold;position:absolute;left:16%;top:65%;width: 70%;font-size: 3.1vw;}
+    .nav{width: 100%;overflow:hidden;background-color:  wheat;padding: 1% ;position: fixed;top:15.7vw;}
+    .nav li{list-style:none;float:right;font-size: 4.49vw;margin-right: 2%;}
     .nav li a{
         display: block;
         width: 100%;
@@ -26,31 +27,31 @@
     .nav li a:hover{
         color:yellow;
     }
-    .content{width:100%;margin-top: 15vw;background-color:  white;overflow: hidden;}
+    .content{width:100%;margin-top: 24.5vw;background-color:  white;overflow: hidden;}
     .content img{width: 100%;z-index: 1000;margin-top: 0.2vw;}
-    .content h1{width: 95%;margin:1%;font-size:2.5vw;color:black;}
+    .content h1{width: 95%;margin:1%;font-size:4vw;color:black;}
     .content h3{width: 90%;margin:1%;padding:1%;font-size:1vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;}
     .content h6{text-indent: 3%;font-size:1vw;color:black;font-weight:bold;}
     .content h7{margin-left: 8%;font-size:1vw;color:black;font-weight:bold;}
     .content a{color: rgb(17, 17, 124)}
     .content a:hover{color:blue;}
-    .content p{margin: 1%;font-size: 2vw;line-height: 150%;}
+    .content p{margin: 1%;font-size: 3.5vw;line-height: 150%;}
     .content p1{background-image: linear-gradient(90deg, blue, purple, red);color: transparent; background-clip: text;  -webkit-background-clip: text;  /* 讓 Chrome/Safari 正確顯示 */  -webkit-text-fill-color: transparent;  /* 可選，提升相容性 */}
-    .content p2{margin-left:25%;text-align: center;color:green;font-size: 1.5vw;}
-    .content p3{margin: 1%;font-size:2vw;color:black;font-weight:bold;}
+    .content p2{margin-left:17%;text-align: center;color:green;font-size: 3.5vw;}
+    .content p3{margin: 1%;font-size:4vw;color:black;font-weight:bold;}
 
-    .contact-item{overflow: hidden;}
-    .contact-item img{width:7%;;float:left;margin-top:0;margin-right:1vw}
-    .contact-item p{font-size: 2.5vw;margin-top: 1vw;}
+    .contact-item{overflow: hidden;margin-top:3vw;}
+    .contact-item img{width:7%;;float:left;margin-top:0;margin-right:1vw;margin-left:1vw}
+    .contact-item p{font-size: 3.5vw;margin-top: 1vw;}
     
    
-    .arrow-down {display: inline-block;width: 0;height: 0;border-left: 1.5vw solid transparent;border-right: 1.5vw solid transparent;border-top: 1.5vw solid green;font-size: 1.5vw;}
+    .arrow-down {display: inline-block;width: 0;height: 0;border-left: 1.5vw solid transparent;border-right: 1.5vw solid transparent;border-top: 1.5vw solid green;}
 
     .button2{background-image:linear-gradient(white,rgb(255, 174, 0));border: none;font-size: 100%;font-weight: bold;text-decoration: underline;}
     .button2:hover{transform:scale(0.9);}
 
-    .box{width:100%;margin-top: 13.5vw;background-color:  white;overflow: hidden;}
-    .list{width:  34%;padding:1vw 1vw 10vw 1vw;background-color:white;position: fixed; top: 15vw;bottom: 170vw;}
+    .box{width:100%;margin-top: 24.4vw;background-color:  white;overflow: hidden;}
+    .list{width:  40%;padding:1vw 1vw 10vw 1vw;background-color:white;position: fixed; top: 25vw;bottom: 170vw;}
    
     .list li{list-style:none;}
     .list li a{
@@ -58,7 +59,7 @@
         height: 8vw;
         line-height: 8vw;
         color:gray;
-        font-size: 2.5vw;
+        font-size: 3vw;
         text-indent: 0vw;
         box-shadow: 0 1vw 1vw -1vw;
         font-weight:bold;        
@@ -69,50 +70,50 @@
     }
     
 
-    .product{background-color:white;width: 50%;float: left;margin-left:45%;padding-bottom: 10%;}
-    .product h1{width: 95%;margin:3%; font-size:2.5vw;color:black;}
-    .product p{width: 95%;margin:3%;font-size:2vw;color:black;}
-    .product h2{width: 40%;margin-top:1%;padding:1%;font-size:2.5vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;position: fixed;}
-    .product h3{margin:5%;font-size: 2vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
-    .product h5{margin:5%;font-size: 1.5vw;line-height: 120%;text-align: center;}
+    .product{background-color:white;width: 55%;float: left;margin-left:45%;padding-bottom: 10%;}
+    .product h1{width: 95%;margin:3%; font-size:3.5vw;color:black;}
+    .product p{width: 95%;margin:3%;font-size:3.5vw;color:black;}
+    .product h2{width: 40%;margin-top:0%;padding:1%;font-size:3vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;position: fixed;}
+    .product h3{margin:5%;font-size: 3vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
+    .product h5{margin:5%;font-size: 3vw;line-height: 120%;text-align: center;}
         
 
-    .square1{margin-top:20%;margin-bottom:10%;margin-left:8%;background-color:  white;width: 40%;height: 25vw;float: left;}
+    .square1{margin-top:20%;margin-bottom:30%;margin-left:8%;background-color:  white;width: 40%;height: 25vw;float: left;}
     .square1:hover{transform:scale(1.1)}
     .square1 img{width: 100%;}
-    .square2{margin-top:20%;margin-bottom:10%;margin-left:1%;background-color:  white;width: 80%;height: 30vw;float: left;}
+    .square2{margin-top:20%;margin-bottom:25%;margin-left:1%;background-color:  white;width: 80%;height: 30vw;float: left;}
     .square2:hover{transform:scale(1.1)}
     .square2 img{width: 100%}
     .square3{margin-top:20%;margin-bottom:60%;background-color:  white;width: 80%;height: 35vw;float: left;}
     .square3:hover{transform:scale(1.1)}
     .square3 img{width: 100%}
-    .square4{margin-top:15%;margin-bottom:75%;background-color:  white;width: 90%;height: 30vw;float: left;}
+    .square4{margin-top:15%;margin-bottom:40%;background-color:  white;width: 90%;height: 30vw;float: left;}
     .square4:hover{transform:scale(1.1)}
     .square4 img{width: 100%}
-    .square5{margin-top:20%;margin-bottom:10%;margin-left:1%;background-color:  white;width: 90%;height: 10vw;float: left;}
+    .square5{margin-top:20%;margin-bottom:20%;margin-left:1%;background-color:  white;width: 90%;height: 10vw;float: left;}
     .square5:hover{transform:scale(1.1)}
     .square5 img{width: 100%}
-    .square6{margin-left:3%;background-color:  white;width: 25%;height: 22vw;float:left}
+    .square6{margin-left:3%;background-color:  white;width: 40%;height: 50vw;float:left}
     .square6:hover{transform:scale(1.05)}
     .square6 img{width: 100%}
     .square7{margin-top:25%;margin-bottom:10%;background-color:  white;width: 90%;height: 30vw;float: left;}
     .square7:hover{transform:scale(1.1)}
     .square7 img{width: 100%}
-    .square8{margin-top:25%;margin-bottom:10%;margin-left:5%;background-color:  white;width: 90%;height: 35vw;float: left;}
+    .square8{margin-top:25%;margin-bottom:30%;margin-left:5%;background-color:  white;width: 90%;height: 35vw;float: left;}
     .square8:hover{transform:scale(1.1)}
     .square8 img{width: 100%}
 
     
 
-    .file{margin-top:14vw;margin-bottom: 1vw;background-color:white;width: 100%;float:left}
-    .file h2{width: 95%;margin:1%;font-size:1.5vw;color:black;}
-    .file h1{margin:5%;font-size: 1.2vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
+    .file{margin-top:24vw;margin-bottom: 1vw;background-color:white;width: 100%;float:left}
+    .file h2{width: 95%;margin:1%;font-size:3vw;color:black;}
+    .file h1{margin:5%;font-size: 3vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
 
  
 
 
     .footer{width: 100%;color:white;background-color: black;text-align: center;padding-top:1%;}
-    .footer p{margin:0.5%;font-size: 0.5vw;line-height: 100%;}
+    .footer p{margin:0.5%;font-size: 2.5vw;line-height: 100%;}
     .footer a{color:white}
     .footer a:hover{color:yellow;}
 }
@@ -125,15 +126,16 @@
 {
 
     body{background-image: url(背景1_無版權_httpswww.pexels.comzh-tw.jpg);background-repeat: repeat;}
-    .container{width: 80%;margin: 0 auto;background-color:  white;  justify-content: center;}
+    .container{width: 75%;margin: 0 auto;background-color:  white;  justify-content: center;}
 
-    .header1{background-color:red;width: 80%;height: 1vw;position: fixed;top:0;margin: 0 auto;}
-    .header2{background-color:white;width:  80%;height:8vw;position: fixed;top:1vw;margin: 0 auto;}
+    .header1{background-color:red;width: 75%;height: 1vw;position: fixed;top:0;margin: 0 auto;}
+    .header2{background-color:white;width:  75%;height:7.5vw;position: fixed;top:1vw;margin: 0 auto;}
 
-    .header2 h3{color:black;font-weight:bold;position:absolute;left:11%;top:0%;width: 58%;font-size: 4vw;}
-    .header2 h4{color:black;font-weight:bold;position:absolute;left:11%;top:65%;width: 58%;font-size: 2vw;}
-    .nav{width: 78%;overflow:hidden;background-color:  wheat;padding: 1% ;position: fixed;top:9vw;}
-    .nav li{list-style:none;float:right;font-size: 1.5vw;margin-right: 2%;}
+    .header2 img{border-radius: 0%;width:10%;}
+    .header2 h3{color:black;font-weight:bold;position:absolute;left:11%;top:8%;width: 58%;font-size: 3vw;}
+    .header2 h4{color:black;font-weight:bold;position:absolute;left:11%;top:65%;width: 58%;font-size: 1.5vw;}
+    .nav{width: 74%;overflow:hidden;background-color:  wheat;padding: 0.5% ;position: fixed;top:8.4vw;}
+    .nav li{list-style:none;float:right;font-size: 1vw;margin-right: 2%;}
     .nav li a{
         display: block;
         width: 100%;
@@ -146,31 +148,31 @@
     .nav li a:hover{
         color:yellow;
     }
-    .content{width:100%;margin-top: 13vw;background-color:  white;overflow: hidden;;}
+    .content{width:100%;margin-top: 10.8vw;background-color:  white;overflow: hidden;;}
     .content img{width: 100%;z-index: 1000;margin-top: 0.2vw;}
-    .content h1{width: 95%;margin:1%;font-size:2.5vw;color:black;}
+    .content h1{width: 95%;margin:1%;font-size:2vw;color:black;}
     .content h3{width: 90%;margin:1%;padding:1%;font-size:1vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;}
     .content h4 img{width: 3%;margin-right:1%;margin-left: 1%;float: left;}
     .content h6{text-indent: 3%;font-size:1vw;color:black;font-weight:bold;}
     .content h7{margin-left: 8%;text-indent: 8%;font-size:1vw;color:black;font-weight:bold;}
     .content a{color: rgb(17, 17, 124)}
     .content a:hover{color:blue;}
-    .content p{margin: 1%;font-size: 2vw;line-height: 150%;}
+    .content p{margin: 1%;font-size: 1.5vw;line-height: 150%;}
     .content p1{background-image: linear-gradient(90deg, blue, purple, red);color: transparent; background-clip: text;  -webkit-background-clip: text;  /* 讓 Chrome/Safari 正確顯示 */  -webkit-text-fill-color: transparent;  /* 可選，提升相容性 */}
     .content p2{margin-left:25%;text-align: center;color:green;font-size: 1.5vw;}
     .content p3{margin: 1%;font-size:2vw;color:black;font-weight:bold;}
    
     .contact-item{overflow: hidden;}
-    .contact-item img{width:5%;;float:left;margin-top:0;margin-right:1vw}
-    .contact-item p{font-size: 1.5vw;margin-top: 1vw;}
+    .contact-item img{width:5%;;float:left;margin-top:0;margin-right:1vw;margin-left:1vw;}
+    .contact-item p{font-size: 1.5vw;margin-top: 0.8vw;}
 
-    .arrow-down {display: inline-block;width: 0;height: 0;border-left: 1.5vw solid transparent;border-right: 1.5vw solid transparent;border-top: 1.5vw solid green;font-size: 1.5vw;}
+    .arrow-down {display: inline-block;width: 0;height: 0;border-left: 1.5vw solid transparent;border-right: 1.5vw solid transparent;border-top: 1.5vw solid green;}
 
     .button2{background-image:linear-gradient(white,rgb(255, 174, 0));border: none;font-size: 100%;font-weight: bold;text-decoration: underline;}
     .button2:hover{transform:scale(0.9);}
 
-    .box{width:100%;margin-top: 12.1vw;background-color:  white;overflow: hidden;;}
-    .list{width:  21%;padding:1vw 1vw 10vw 1vw;background-color:white;position: fixed; top: 13.5vw;bottom: 170vw;}
+    .box{width:100%;margin-top: 10.8vw;background-color:  white;overflow: hidden;;}
+    .list{width:  21%;padding:1vw 1vw 10vw 1vw;background-color:white;position: fixed; top: 12vw;bottom: 170vw;}
    
     .list li{list-style:none;}
     .list li a{
@@ -192,7 +194,7 @@
     .product{background-color:white;width: 70%;float: left;margin-left:30%;padding-bottom: 10%;}
     .product h1{width: 95%;margin:3%; font-size:2.5vw;color:black;}
     .product p{width: 95%;margin:3%;font-size:2vw;color:black;}
-    .product h2{width: 50%;margin-top:1%;padding:1%;font-size:1.5vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;position: fixed;}
+    .product h2{width: 50%;margin-top:0%;padding:1%;font-size:1.5vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;position: fixed;}
     .product h3{margin:5%;font-size: 1.5vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
     .product h5{margin:5%;font-size: 1vw;line-height: 120%;text-align: center;}
         
@@ -203,7 +205,7 @@
     .square2{margin-top:11%;margin-bottom:10%;margin-left:1%;background-color:  white;width: 30%;height: 15vw;float: left;}
     .square2:hover{transform:scale(1.1)}
     .square2 img{width: 100%}
-    .square3{margin-top:10%;margin-bottom:10%;background-color:  white;width: 33%;height: 18vw;float: left;}
+    .square3{margin-top:10%;margin-bottom:10%;background-color:  white;width: 40%;height: 18vw;float: left;}
     .square3:hover{transform:scale(1.1)}
     .square3 img{width: 100%}
     .square4{margin-top:11%;margin-bottom:10%;background-color:  white;width: 80%;height: 15vw;float: left;}
@@ -222,7 +224,7 @@
     .square8:hover{transform:scale(1.1)}
     .square8 img{width: 100%}
 
-    .file{margin-top:13vw;margin-bottom: 1vw;background-color:white;width: 100%;float:left}
+    .file{margin-top:10.8vw;margin-bottom: 1vw;background-color:white;width: 100%;float:left}
     .file h2{width: 95%;margin:1%;font-size:1.5vw;color:black;}
     .file h1{margin:5%;font-size: 1.2vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
 
@@ -230,7 +232,7 @@
 
 
     .footer{width: 100%;color:white;background-color: black;text-align: center;padding-top:1%;}
-    .footer p{margin:0.5%;font-size: 0.5vw;line-height: 100%;}
+    .footer p{margin:0.5%;font-size: 0.8vw;line-height: 100%;}
     .footer a{color:white}
     .footer a:hover{color:yellow;}
 }
