@@ -1,238 +1,699 @@
 @charset "utf-8";
-*{padding:0;margin: 0;}
 
-@media screen and (max-width:750px)
-{
+/* ==========================================
+   全站通用基礎設定 (不分螢幕大小)
+   ========================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* 確保 padding 不會撐開總寬度導致破版 */
+}
 
-    body{background-image: url(背景1_無版權_httpswww.pexels.comzh-tw.jpg);background-repeat: repeat;}
-    .container{width: 100%;margin: 0 auto;background-color:  white;  justify-content: center;}
+body {
+    background-image: url(背景1_無版權_httpswww.pexels.comzh-tw.jpg);
+    background-repeat: repeat;
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+}
 
-    .header1{background-color:red;width: 100%;height: 1vw;position: fixed;top:0;margin: 0 auto;}
-    .header2{background-color:white;width:  100%;height:15vw;position: fixed;top:1vw;margin: 0 auto;}
-    
-    .header2 img{border-radius: 0%;width:15%;}
-    .header2 h3{color:black;font-weight:bold;position:absolute;left:16%;top:8%;width: 65%;font-size: 6.3vw;}
-    .header2 h4{color:black;font-weight:bold;position:absolute;left:16%;top:65%;width: 70%;font-size: 3.1vw;}
-    .nav{width: 100%;overflow:hidden;background-color:  wheat;padding: 1% ;position: fixed;top:15.7vw;}
-    .nav li{list-style:none;float:right;font-size: 4.49vw;margin-right: 2%;}
-    .nav li a{
-        display: block;
-        width: 100%;
-        background-image:linear-gradient(red,black) ;
-        font-weight:bold;
-        color: white;
-        border-radius: 0%;
-        text-align: center;        
-    }
-    .nav li a:hover{
-        color:yellow;
-    }
-    .content{width:100%;margin-top: 24.5vw;background-color:  white;overflow: hidden;}
-    .content img{width: 100%;z-index: 1000;margin-top: 0.2vw;}
-    .content h1{width: 95%;margin:1%;font-size:4vw;color:black;}
-    .content h3{width: 90%;margin:1%;padding:1%;font-size:1vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;}
-    .content h6{text-indent: 3%;font-size:1vw;color:black;font-weight:bold;}
-    .content h7{margin-left: 8%;font-size:1vw;color:black;font-weight:bold;}
-    .content a{color: rgb(17, 17, 124)}
-    .content a:hover{color:blue;}
-    .content p{margin: 1%;font-size: 3.5vw;line-height: 150%;}
-    .content p1{background-image: linear-gradient(90deg, blue, purple, red);color: transparent; background-clip: text;  -webkit-background-clip: text;  /* 讓 Chrome/Safari 正確顯示 */  -webkit-text-fill-color: transparent;  /* 可選，提升相容性 */}
-    .content p2{margin-left:17%;text-align: center;color:green;font-size: 3.5vw;}
-    .content p3{margin: 1%;font-size:4vw;color:black;font-weight:bold;}
+/* 網頁主容器：在桌機上限寬 1200px 並置中，防止大螢幕時內容過度橫向變形 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
 
-    .contact-item{overflow: hidden;margin-top:3vw;}
-    .contact-item img{width:7%;;float:left;margin-top:0;margin-right:1vw;margin-left:1vw}
-    .contact-item p{font-size: 3.5vw;margin-top: 1vw;}
-    
-   
-    .arrow-down {display: inline-block;width: 0;height: 0;border-left: 1.5vw solid transparent;border-right: 1.5vw solid transparent;border-top: 1.5vw solid green;}
+/* 圖片通用響應式設定 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-    .button2{background-image:linear-gradient(white,rgb(255, 174, 0));border: none;font-size: 100%;font-weight: bold;text-decoration: underline;}
-    .button2:hover{transform:scale(0.9);}
+/* 導覽列通用設定 */
+.nav {
+    width: 100%;
+    background-color: wheat;
+}
 
-    .box{width:100%;margin-top: 24.4vw;background-color:  white;overflow: hidden;}
-    .list{width:  40%;padding:1vw 1vw 10vw 1vw;background-color:white;position: fixed; top: 25vw;bottom: 170vw;}
-   
-    .list li{list-style:none;}
-    .list li a{
-        display: block;
-        height: 8vw;
-        line-height: 8vw;
-        color:gray;
-        font-size: 3vw;
-        text-indent: 0vw;
-        box-shadow: 0 1vw 1vw -1vw;
-        font-weight:bold;        
-        text-align: center;   
-    }
-    .list li a:hover{
-        color:green;
-    }
-    
+.nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
 
-    .product{background-color:white;width: 55%;float: left;margin-left:45%;padding-bottom: 10%;}
-    .product h1{width: 95%;margin:3%; font-size:3.5vw;color:black;}
-    .product p{width: 95%;margin:3%;font-size:3.5vw;color:black;}
-    .product h2{width: 40%;margin-top:0%;padding:1%;font-size:3vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;position: fixed;}
-    .product h3{margin:5%;font-size: 3vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
-    .product h5{margin:5%;font-size: 3vw;line-height: 120%;text-align: center;}
-        
+.nav li {
+    flex: 1; /* 平分導覽列寬度 */
+}
 
-    .square1{margin-top:20%;margin-bottom:30%;margin-left:8%;background-color:  white;width: 40%;height: 25vw;float: left;}
-    .square1:hover{transform:scale(1.1)}
-    .square1 img{width: 100%;}
-    .square2{margin-top:20%;margin-bottom:25%;margin-left:1%;background-color:  white;width: 80%;height: 30vw;float: left;}
-    .square2:hover{transform:scale(1.1)}
-    .square2 img{width: 100%}
-    .square3{margin-top:20%;margin-bottom:60%;background-color:  white;width: 80%;height: 35vw;float: left;}
-    .square3:hover{transform:scale(1.1)}
-    .square3 img{width: 100%}
-    .square4{margin-top:15%;margin-bottom:40%;background-color:  white;width: 90%;height: 30vw;float: left;}
-    .square4:hover{transform:scale(1.1)}
-    .square4 img{width: 100%}
-    .square5{margin-top:20%;margin-bottom:20%;margin-left:1%;background-color:  white;width: 90%;height: 10vw;float: left;}
-    .square5:hover{transform:scale(1.1)}
-    .square5 img{width: 100%}
-    .square6{margin-left:3%;background-color:  white;width: 40%;height: 50vw;float:left}
-    .square6:hover{transform:scale(1.05)}
-    .square6 img{width: 100%}
-    .square7{margin-top:25%;margin-bottom:10%;background-color:  white;width: 90%;height: 30vw;float: left;}
-    .square7:hover{transform:scale(1.1)}
-    .square7 img{width: 100%}
-    .square8{margin-top:25%;margin-bottom:30%;margin-left:5%;background-color:  white;width: 90%;height: 35vw;float: left;}
-    .square8:hover{transform:scale(1.1)}
-    .square8 img{width: 100%}
+.nav li a {
+    display: block;
+    padding: 12px 2px;
+    background-image: linear-gradient(red, black);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
 
-    
+.nav li a:hover {
+    color: yellow;
+}
 
-    .file{margin-top:24vw;margin-bottom: 1vw;background-color:white;width: 100%;float:left}
-    .file h2{width: 95%;margin:1%;font-size:3vw;color:black;}
-    .file h1{margin:5%;font-size: 3vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
+/* index_經營理念漸層文字 */
+.content p1 {
+    background-image: linear-gradient(90deg, blue, purple, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
 
- 
+/* 綠色倒三角形箭頭 */
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    margin-right: 8px;
+}
 
+/* ==========================================
+   聯絡我們：小插圖與文字「垂直置中對齊」設定
+   ========================================== */
+.contact-item {
+    display: flex;
+    align-items: center;    /* 關鍵：讓小圖示與文字的中心線完美對齊 */
+    gap: 15px;              /* 圖片與文字之間的左右間距 */
+    margin-bottom: 25px;    /* 每一行聯絡資訊之間的上下距離 */
+    width: 100%;
+}
 
-    .footer{width: 100%;color:white;background-color: black;text-align: center;padding-top:1%;}
-    .footer p{margin:0.5%;font-size: 2.5vw;line-height: 100%;}
-    .footer a{color:white}
-    .footer a:hover{color:yellow;}
+.contact-item img {
+    width: 35px;            /* 固定小插圖的寬度 */
+    height: 35px;           /* 固定小插圖的高度 */
+    object-fit: contain;    
+    flex-shrink: 0;         
+}
+
+/* 修正對齊：強制消除 p 標籤原有的邊距 */
+.contact-item p {
+    flex: 1;                
+    margin: 0 !important;   /* 關鍵：強制歸零上下邊距，字才不會往上飄 */
+    padding: 0;             /* 消除內邊距 */
+    line-height: 1;         /* 讓行高與字體尺寸一致，確保絕對置中 */
+}
+
+/* 4. 地圖區塊上下留白 */
+.map {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* Google 地圖高度調整：避免 iframe 縮小成一條線 */
+.map iframe {
+    height: 400px;          /* 桌機版給予地圖 400px 舒適高度 */
+}
+
+/* ==========================================
+   檔案下載區：通用基礎設定
+   ========================================== */
+.file {
+    width: 100%;
+    background-color: white;
+}
+
+/* 下載格線：給予內部卡片足夠的上下留白 */
+.download-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 下載卡片外盒：預設垂直排列，內容置中 */
+.download-card {
+    background-color: white;
+    border: 1px solid #e8e8e8;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* 滑鼠懸停在卡片上時的精緻動態效果 */
+.download-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.download-card h3 {
+    color: #11117c; /* 呼應利澤深藍色 */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.download-img-box a {
+    display: inline-block;
+    text-decoration: none;
 }
 
 
+/* 頁尾通用樣式 */
+.footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.footer p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.footer hr {
+    margin: 15px auto;
+    border: 1;
+    border-top: 1px solid #333;
+    width: 80%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: yellow;
+}
+
+/* ==========================================
+   產品選單與示意圖整合樣式 (通用設定)
+   ========================================== */
+.list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 每個產品項目之間的上下間距 */
+}
+
+/* 讓每個 li 變成 Flex 容器，使圖片與文字按鈕橫向並排 */
+.list li {
+    display: flex;
+    align-items: center; /* 讓圖片與文字垂直居中對齊 */
+    gap: 10px;           /* 圖片與文字按鈕之間的左右間距 */
+    width: 100%;
+}
+
+/* 產品清單旁的示意圖小圖控制 */
+.list .prod-thumb {
+    width: 60px;         
+    height: 60px;        
+    object-fit: cover;   
+    border: 1px solid #ddd;
+    border-radius: 4px;  
+}
+
+/* 文字按鈕樣式 */
+.list li a {
+    flex: 1; 
+    display: block;
+    padding: 12px 10px;
+    background-color: white;
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.list li a:hover {
+    color: green;
+    border-color: green;
+    background-color: #f9f9f9;
+}
 
 
-
-@media screen and (min-width:750px)
-{
-
-    body{background-image: url(背景1_無版權_httpswww.pexels.comzh-tw.jpg);background-repeat: repeat;}
-    .container{width: 75%;margin: 0 auto;background-color:  white;  justify-content: center;}
-
-    .header1{background-color:red;width: 75%;height: 1vw;position: fixed;top:0;margin: 0 auto;}
-    .header2{background-color:white;width:  75%;height:7.5vw;position: fixed;top:1vw;margin: 0 auto;}
-
-    .header2 img{border-radius: 0%;width:10%;}
-    .header2 h3{color:black;font-weight:bold;position:absolute;left:11%;top:8%;width: 58%;font-size: 3vw;}
-    .header2 h4{color:black;font-weight:bold;position:absolute;left:11%;top:65%;width: 58%;font-size: 1.5vw;}
-    .nav{width: 74%;overflow:hidden;background-color:  wheat;padding: 0.5% ;position: fixed;top:8.4vw;}
-    .nav li{list-style:none;float:right;font-size: 1vw;margin-right: 2%;}
-    .nav li a{
-        display: block;
-        width: 100%;
-        background-image:linear-gradient(red,black) ;
-        font-weight:bold;
-        color: white;
-        border-radius: 0%;
-        text-align: center;        
+/* ==========================================
+   【手機版響應式排版】 (螢幕寬度 750px 以下)
+   ========================================== */
+@media screen and (max-width: 750px) {
+    .header1 {
+        background-color: red;
+        height: 6px;
     }
-    .nav li a:hover{
-        color:yellow;
+    /* 標頭改用彈性水平分配,防止右側圖片不見 */ 
+    .header2 {
+        background-color: white;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
-    .content{width:100%;margin-top: 10.8vw;background-color:  white;overflow: hidden;;}
-    .content img{width: 100%;z-index: 1000;margin-top: 0.2vw;}
-    .content h1{width: 95%;margin:1%;font-size:2vw;color:black;}
-    .content h3{width: 90%;margin:1%;padding:1%;font-size:1vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;}
-    .content h4 img{width: 3%;margin-right:1%;margin-left: 1%;float: left;}
-    .content h6{text-indent: 3%;font-size:1vw;color:black;font-weight:bold;}
-    .content h7{margin-left: 8%;text-indent: 8%;font-size:1vw;color:black;font-weight:bold;}
-    .content a{color: rgb(17, 17, 124)}
-    .content a:hover{color:blue;}
-    .content p{margin: 1%;font-size: 1.5vw;line-height: 150%;}
-    .content p1{background-image: linear-gradient(90deg, blue, purple, red);color: transparent; background-clip: text;  -webkit-background-clip: text;  /* 讓 Chrome/Safari 正確顯示 */  -webkit-text-fill-color: transparent;  /* 可選，提升相容性 */}
-    .content p2{margin-left:25%;text-align: center;color:green;font-size: 1.5vw;}
-    .content p3{margin: 1%;font-size:2vw;color:black;font-weight:bold;}
-   
-    .contact-item{overflow: hidden;}
-    .contact-item img{width:5%;;float:left;margin-top:0;margin-right:1vw;margin-left:1vw;}
-    .contact-item p{font-size: 1.5vw;margin-top: 0.8vw;}
 
-    .arrow-down {display: inline-block;width: 0;height: 0;border-left: 1.5vw solid transparent;border-right: 1.5vw solid transparent;border-top: 1.5vw solid green;}
+    .header2 .logo-left { width: 14vw; }
+    .header2 .logo-right { width: 22vw; }
+    .header2 .header-text { flex: 1; }
+    .header2 h3 { color: black; font-weight: bold; font-size: 5vw; }
+    .header2 h4 { color: black; font-weight: bold; font-size: 2.5vw; margin-top: 2px; }
 
-    .button2{background-image:linear-gradient(white,rgb(255, 174, 0));border: none;font-size: 100%;font-weight: bold;text-decoration: underline;}
-    .button2:hover{transform:scale(0.9);}
+    /* 手機版導覽列字體自動隨螢幕縮小 */ 
+    .nav li a { font-size: 3.5vw; padding: 10px 0; }
 
-    .box{width:100%;margin-top: 10.8vw;background-color:  white;overflow: hidden;;}
-    .list{width:  21%;padding:1vw 1vw 10vw 1vw;background-color:white;position: fixed; top: 12vw;bottom: 170vw;}
-   
-    .list li{list-style:none;}
-    .list li a{
-        display: block;
-        height: 4vw;
-        line-height: 4vw;
-        color:gray;
-        font-size: 1.5vw;
-        text-indent: 0vw;
-        box-shadow: 0 1vw 1vw -1vw;
-        font-weight:bold;        
-        text-align: center;   
-    }
-    .list li a:hover{
-        color:green;
+    /* 內文區域 */
+    .content { 
+        width: 100%; 
+        padding: 1px 20px; 
+    } 
+    .content .banner-img { 
+        width: 100%; 
+        margin-bottom: 15px; 
+    } 
+    .content h1 { 
+        font-size: 6.5vw; 
+        color: black; 
+        margin: 20px 0 10px 0; 
+        border-left: 4px solid red; 
+        padding-left: 8px; 
+    } 
+    .content p { 
+        font-size: 4.2vw; 
+        line-height: 1.6; 
+        margin-bottom: 15px; 
+        text-align: justify; 
+    } 
+    
+    .content p2 {
+        font-size: 4.2vw; /* 與內文一樣大 */
+        font-weight: bold; /* 變粗體字 */
+        text-decoration: underline; /* 加底線 */
+        text-decoration-color: black; /* 確保底線是黑色，不會變漸層色 */
     }
     
+    /* index_圖文群組手機版:切換為上下堆疊單欄,滿版顯示 */ 
+    .service-grid { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 25px; 
+        margin: 20px 0; 
+        width: 100%; 
+    } 
+    .service-card { width: 100%; } 
+    .service-card p2 { 
+        display: flex; 
+        align-items: center; 
+        color: green; 
+        font-size: 4vw; 
+        font-weight: bold; 
+        margin-bottom: 8px; 
+    } 
+    .arrow-down { 
+        border-left: 1.5vw solid transparent; 
+        border-right: 1.5vw solid transparent; 
+        border-top: 1.5vw solid green; 
+    } 
+    .img-box img { width: 100%; } 
+    
+    /* 底部 8 個小標誌:手機版改為四個一排自動換行 */ 
+    .logo-grid { 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 2%; 
+        margin: 20px 0; } 
+    .logo-grid img { 
+        max-width: 23%; 
+        margin-bottom: 8px; }
 
-    .product{background-color:white;width: 70%;float: left;margin-left:30%;padding-bottom: 10%;}
-    .product h1{width: 95%;margin:3%; font-size:2.5vw;color:black;}
-    .product p{width: 95%;margin:3%;font-size:2vw;color:black;}
-    .product h2{width: 50%;margin-top:0%;padding:1%;font-size:1.5vw;color:white;background-image:linear-gradient(to right,green,black);border-radius: 20px;position: fixed;}
-    .product h3{margin:5%;font-size: 1.5vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
-    .product h5{margin:5%;font-size: 1vw;line-height: 120%;text-align: center;}
-        
+    /* 手機版主要容器 */
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0; /* 移除外層內邊距，讓固定選單能左右貼齊邊緣 */
+    }
 
-    .square1{margin-top:11%;margin-bottom: 10%;margin-left: 5%;background-color:  white;width: 25%;height: 20vw;float: left;}
-    .square1:hover{transform:scale(1.1)}
-    .square1 img{width: 100%;}
-    .square2{margin-top:11%;margin-bottom:10%;margin-left:1%;background-color:  white;width: 30%;height: 15vw;float: left;}
-    .square2:hover{transform:scale(1.1)}
-    .square2 img{width: 100%}
-    .square3{margin-top:10%;margin-bottom:10%;background-color:  white;width: 40%;height: 18vw;float: left;}
-    .square3:hover{transform:scale(1.1)}
-    .square3 img{width: 100%}
-    .square4{margin-top:11%;margin-bottom:10%;background-color:  white;width: 80%;height: 15vw;float: left;}
-    .square4:hover{transform:scale(1.1)}
-    .square4 img{width: 100%}
-    .square5{margin-top:11%;margin-bottom:10%;margin-left:1%;background-color:  white;width: 60%;height: 15vw;float: left;}
-    .square5:hover{transform:scale(1.1)}
-    .square5 img{width: 100%}
-    .square6{margin-left:3%;background-color:  white;width: 25%;height: 22vw;float:left}
-    .square6:hover{transform:scale(1.05)}
-    .square6 img{width: 100%}
-    .square7{margin-top:13%;margin-bottom:10%;background-color:  white;width: 45%;height: 15vw;float: left;}
-    .square7:hover{transform:scale(1.1)}
-    .square7 img{width: 100%}
-    .square8{margin-top:13%;margin-bottom:10%;;margin-left:5%;background-color:  white;width: 40%;height: 20vw;float: left;}
-    .square8:hover{transform:scale(1.1)}
-    .square8 img{width: 100%}
+    /* 手機版產品選單：全部 Show 出、且固定在最上方 */
+    .list { 
+        width: 100%; 
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;                /* 滑動時黏在手機畫面最頂端 */
+        z-index: 999;          
+        background-color: #fdfdfd; 
+        padding: 12px 10px;
+        border-bottom: 2px solid green; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-    .file{margin-top:10.8vw;margin-bottom: 1vw;background-color:white;width: 100%;float:left}
-    .file h2{width: 95%;margin:1%;font-size:1.5vw;color:black;}
-    .file h1{margin:5%;font-size: 1.2vw;line-height: 100%;color: rgb(17, 17, 124);text-align: center;}
+    /* 手機版清單：改為「左右雙欄並排」網格，讓 7 個按鈕全部一次 Show 出不漏掉 */
+    .list ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 寬度自動平分為兩欄 */
+        gap: 8px; /* 按鈕之間的間距 */
+        width: 100%;
+        padding: 0;
+    }
 
- 
+    /* 第 7 個按鈕（台達變頻器）因為是單數，讓它單獨撐滿整排比較美觀 */
+    .list ul li:nth-child(7) {
+        grid-column: span 2;
+    }
+
+    /* 手機版獨立項目：左圖右字 */
+    .list li {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+    }
+
+    /* 手機版選單小縮圖 */
+    .list .prod-thumb { 
+        width: 35px; 
+        height: 35px; 
+        flex-shrink: 0; /* 防止圖片被文字壓扁 */
+    }
+
+    /* 手機版選單按鈕 */
+    .list li a { 
+        font-size: 3vw; 
+        padding: 8px 4px; 
+        width: 100%;
+        border-radius: 4px;
+        line-height: 1.2;
+    }
+
+    /* 右側產品內容區手機版 */
+    .product { 
+        width: 100%; 
+        padding: 20px 15px; 
+    }
+    .product h2 { font-size: 5.5vw; color: black; margin-bottom: 20px; border-left: 4px solid red; padding-left: 8px; }
+
+    /* 手機版產品主機卡片網格 */
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .square {
+        background-color: white;
+        border: 1px solid #eee;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .square h3 { font-size: 4.5vw; margin-bottom: 5px; color: #333; }
+    .square h5 { font-size: 3.8vw; color: #666; margin-bottom: 10px; font-weight: normal; }
+    .square h5 a { color: #11117c; text-decoration: none; }
+    
+    /* 關鍵修改 2：限制手機版主機圖片，縮小到畫面 60% 寬度滿就好 */
+    .square img { 
+        margin: 0 auto; 
+        width: 60%; /* 強制縮小至卡片的 60% 寬度 */
+        max-width: 60%;
+        height: auto;
+    }
+
+    /* 在手機小螢幕下，讓插圖稍微小一點點，留更多空間給文字 */
+    .contact-item img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .contact-item p {
+        font-size: 4.2vw;   
+        margin: 0 !important; /* 手機版也同步歸零 */
+        padding: 0;
+        line-height: 1;
+    }
+    
+    .map iframe {
+        height: 280px;      /* 手機版地圖高度調矮，符合手機螢幕大小 */
+    }
+
+    /* 手機版：為整個下載區域加上左右與上下的舒適空間 */
+    .file {
+        width: 100%;
+        background-color: white;
+        padding: 20px 15px; /* 前面 20px 會在上、下自動推出空隙，後面 15px 是左右留白 */
+    }
+
+    /* 手機版標題的間距微調 */
+    .file h2 {
+        font-size: 5.5vw;
+        color: black;
+        margin-top: 5px;       /* 再次確保最上方有微微的空間 */
+        margin-bottom: 20px;   /* 讓「檔案下載」標題與下方 APP 之間拉開空隙 */
+        border-left: 4px solid red;
+        padding-left: 8px;
+    }
+
+    .download-card h3 {
+        font-size: 4.5vw;
+    }
+
+    /* 關鍵限制：讓下載的 APP 圖示在手機畫面上鎖定為 60% 寬度，看起來最舒適 */
+    .download-img-box img {
+        margin: 0 auto;
+        width: 60%;
+        max-width: 60%;
+        height: auto;
+    }
 
 
-    .footer{width: 100%;color:white;background-color: black;text-align: center;padding-top:1%;}
-    .footer p{margin:0.5%;font-size: 0.8vw;line-height: 100%;}
-    .footer a{color:white}
-    .footer a:hover{color:yellow;}
+    .footer p { font-size: 3.2vw; }
+
+}
+    
+     
+
+/* ==========================================
+   【桌機版網頁排版】 (螢幕寬度 751px 以上)
+   ========================================== */
+@media screen and (min-width: 751px) {
+    .header1 {
+        background-color: red;
+        height: 8px;
+    }
+    /* 桌機標頭:三欄對齊,將右側 slogan 圖片完整展現於最右側 */  
+    .header2 {
+        background-color: white;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header2 .logo-left { width: 120px; }
+    .header2 .logo-right { width: 220px; }
+    .header2 .header-text { flex: 1; margin-left: 20px; }
+    .header2 h3 { color: black; font-weight: bold; font-size: 34px; }
+    .header2 h4 { color: black; font-weight: bold; font-size: 17px; margin-top: 4px; letter-spacing: 0.5px; }
+
+    /* 桌機導覽列字體鎖定大小 */ 
+    .nav li a { font-size: 17px; padding: 12px 0; }
+
+    /* 主要內容區 */ 
+    .content { padding: 2px 40px; } 
+    .content .banner-img { 
+        width: 100%; 
+        margin-bottom: 30px; 
+    } 
+    .content h1 { 
+        font-size: 24px; 
+        color: black; 
+        margin: 35px 0 15px 0; 
+        border-left: 5px solid red; 
+        padding-left: 12px; 
+    } 
+    .content p { 
+        font-size: 17px; 
+        line-height: 1.8; 
+        margin-bottom: 25px; 
+        text-align: justify; 
+    }
+    .content p2 {
+        font-size: 17px; /* 與內文一樣大 */
+        font-weight: bold; /* 變粗體字 */
+        text-decoration: underline; /* 加底線 */
+        text-decoration-color: black; /* 確保底線是黑色，不會變漸層色 */
+    }
+
+
+    /* index_兩組圖文左右滿版對齊,並確保文字與照片頂部水平切齊 */
+    .service-grid { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        margin: 30px 0 50px 0; 
+        width: 100%; 
+    } 
+    /* 左側教育訓練卡片:佔 63% 寬度 */ 
+    .id-training { width: 63%; } 
+    
+    /* 右側售後服務卡片:佔 35% 寬度,文字與圖片會一起被推到最右側滿版對齊 */ 
+    .id-service { width: 35%; } 
+    
+    /* 標題文字與照片的間距 */
+    .service-card p2 { 
+        display: flex; 
+        align-items: center; 
+        color: green; 
+        font-size: 20px; 
+        font-weight: bold; 
+        margin-bottom: 12px;  
+    } 
+    .arrow-down { 
+        border-left: 7px solid transparent; 
+        border-right: 7px solid transparent; 
+        border-top: 7px solid green; 
+    } 
+    
+    /* 確保卡片內部圖片強制撐滿外盒,達成左右邊緣滿版 */ 
+    .img-box img { 
+        width: 100%; 
+        height: auto; 
+    } 
+    
+    /* 8 個並排小標誌:桌機版一行橫向完美排開 */ 
+    .logo-grid { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin: 35px 0; 
+        gap: 1%; 
+    } 
+    .logo-grid img { 
+        width: 11.5%; 
+    }
+
+    /* product_桌機大版面：左右並排 */
+    .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* 重要：頂部切齊 */
+        width: 100%;
+        padding: 40px 50px;
+    }
+
+    /* 讓左側選單欄位具備隨滑鼠定住 (Sticky) 的功能 */
+    .list {
+        width: 30%;
+        position: -webkit-sticky; /* 支援 Safari 瀏覽器 */
+        position: sticky;        /* 現代瀏覽器黏性定位 */
+        top: 20px;               /* 當捲動到距離視窗頂部 20px 時，選單就會定住固定不動 */
+        z-index: 10;
+    }
+
+    .list li a { font-size: 16px; }
+
+    /* 右側產品規格區寬度 */
+    .product {
+        width: 65%;
+    }
+
+    .product h2 {
+        font-size: 26px;
+        color: black;
+        margin-bottom: 25px;
+        border-left: 5px solid red;
+        padding-left: 12px;
+    }
+
+    /* 關鍵修改：將 16 台主機卡片改用 Grid 網格，排列成固定大小的精美雙欄 */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 完美的固定雙欄排開 */
+        gap: 25px; /* 卡片跟卡片之間的留白間距 */
+    }
+
+    /* 每一台主機的固定圖文卡片盒設定 (`.square`) */
+    .square {
+        background-color: white;
+        border: 1px solid #e8e8e8;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.04); /* 微立體陰影 */
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    /* 滑鼠懸停在型錄卡片上時，有放大和深陰影的精緻效果 */
+    .square:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .square h3 {
+        font-size: 18px;
+        color: #11117c; /* 讓型號呈現利澤深藍色 */
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .square h5 {
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    /* 控制點擊型錄下載的連結與圖片 */
+    .square h5 a {
+        display: block;
+        text-decoration: none;
+    }
+
+    /* 固定主機圖片的顯示大小，避免圖片長寬不一導致破版 */
+    .square img {
+        margin: 0 auto;
+        max-height: 180px; /* 固定圖片最高 180px */
+        width: auto;       /* 寬度自動適應，維持完美比例不變形 */
+    }
+
+    /* 桌機版：讓大螢幕下的標題與四周維持寬敞的 40px 和 50px 距離 */
+    .file {
+        padding: 40px 50px; /* 上下留白 40px，左右留白 50px */
+        background-color: white;
+    }
+
+    /* 桌機版標題的間距微調 */
+    .file h2 {
+        font-size: 26px;
+        color: black;
+        margin-bottom: 30px;   /* 桌機大螢幕下，與下方 APP 保持 30px 距離 */
+        border-left: 5px solid red;
+        padding-left: 12px;
+    }
+
+    .download-card {
+        max-width: 500px; /* 桌機大螢幕上限縮整塊下載卡片最大寬度 500px，防止過度拉伸 */
+        margin: 0 auto;   /* 卡片居中 */
+    }
+
+    .download-card h3 {
+        font-size: 20px;
+    }
+
+    /* 關鍵限制：桌機大螢幕下的 APP 圖示最高高度限制 200px，防止圖示變得巨大 */
+    .download-img-box img {
+        margin: 0 auto;
+        max-height: 200px;
+        width: auto;
+    }
+
+
+    .footer p { font-size: 15px; }
 }
